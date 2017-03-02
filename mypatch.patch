@@ -1,0 +1,77 @@
+From b60c097d3c38c3b22ee2c5d3f2e0561d42d70d9c Mon Sep 17 00:00:00 2001
+From: Nilesh Patel <nilesh.patel@lnttechservices.com>
+Date: Thu, 2 Mar 2017 18:49:15 +0530
+Subject: [PATCH 1/2] x
+
+---
+ mypatch.patch   | 13 +++++++++++++
+ sample_file.txt |  3 +++
+ 2 files changed, 16 insertions(+)
+ create mode 100644 mypatch.patch
+
+diff --git a/mypatch.patch b/mypatch.patch
+new file mode 100644
+index 0000000..0ccffdf
+--- /dev/null
++++ b/mypatch.patch
+@@ -0,0 +1,13 @@
++diff --git a/sample_file.txt b/sample_file.txt
++index 01bf7d7..24df997 100644
++--- a/sample_file.txt
+++++ b/sample_file.txt
++@@ -2,3 +2,8 @@ sample text
++ hello
++ hi
++ 
+++
+++asdfksdf
+++dflsf;sd
+++sdf;sdf
+++
+diff --git a/sample_file.txt b/sample_file.txt
+index 01bf7d7..cd11d3c 100644
+--- a/sample_file.txt
++++ b/sample_file.txt
+@@ -2,3 +2,6 @@ sample text
+ hello
+ hi
+ 
++
++new line
++
+-- 
+2.11.0
+
+
+From 7782045dc0880aa894708588f0d63bf53240706a Mon Sep 17 00:00:00 2001
+From: Nilesh Patel <nilesh.patel@lnttechservices.com>
+Date: Thu, 2 Mar 2017 20:10:02 +0530
+Subject: [PATCH 2/2] deleted patch file
+
+---
+ mypatch.patch | 13 -------------
+ 1 file changed, 13 deletions(-)
+ delete mode 100644 mypatch.patch
+
+diff --git a/mypatch.patch b/mypatch.patch
+deleted file mode 100644
+index 0ccffdf..0000000
+--- a/mypatch.patch
++++ /dev/null
+@@ -1,13 +0,0 @@
+-diff --git a/sample_file.txt b/sample_file.txt
+-index 01bf7d7..24df997 100644
+---- a/sample_file.txt
+-+++ b/sample_file.txt
+-@@ -2,3 +2,8 @@ sample text
+- hello
+- hi
+- 
+-+
+-+asdfksdf
+-+dflsf;sd
+-+sdf;sdf
+-+
+-- 
+2.11.0
+
